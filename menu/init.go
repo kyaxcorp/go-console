@@ -2,8 +2,8 @@ package menu
 
 import (
 	"fmt"
-	"github.com/kyaxcorp/go-core/core/console/command"
-	"github.com/kyaxcorp/go-core/core/console/commands/config"
+
+	"github.com/kyaxcorp/go-console/command"
 	"github.com/mitchellh/go-homedir"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
@@ -15,7 +15,7 @@ func (m *Menu) init() {
 
 	//Adding additional Core Commands
 	m.AddCommands([]*command.AddCmd{
-		config.GenerateDefaultConfig,
+		// config.GenerateDefaultConfig,
 	})
 
 	// Adding options

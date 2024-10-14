@@ -1,17 +1,17 @@
 package menu
 
 import (
-	"github.com/gookit/color"
-	"github.com/kyaxcorp/go-core/core/bootstrap/register_service"
-	"github.com/kyaxcorp/go-core/core/console/command"
-	"github.com/kyaxcorp/go-core/core/console/working_stage"
-	"github.com/kyaxcorp/go-core/core/helpers/_context"
-	"github.com/kyaxcorp/go-core/core/helpers/filesystem/lock"
-	"github.com/kyaxcorp/go-core/core/helpers/function"
-	"github.com/kyaxcorp/go-core/core/helpers/process/shutdown"
-	"github.com/kyaxcorp/go-core/core/logger/coreLog"
-	"github.com/spf13/cobra"
 	"strings"
+
+	"github.com/gookit/color"
+	"github.com/kyaxcorp/go-console/command"
+	"github.com/kyaxcorp/go-console/working_stage"
+	"github.com/kyaxcorp/go-helper/_context"
+	"github.com/kyaxcorp/go-helper/filesystem/lock"
+	"github.com/kyaxcorp/go-helper/function"
+	"github.com/kyaxcorp/go-helper/process/shutdown"
+	"github.com/kyaxcorp/go-logger/coreLog"
+	"github.com/spf13/cobra"
 )
 
 func (m *Menu) AddCommands(c []*command.AddCmd) *Menu {
@@ -118,16 +118,16 @@ func (m *Menu) AddCommand(c *command.AddCmd) *Menu {
 
 			// -------Run Services--------\\
 
-			if c.EnableStartupServices {
-				// Run Broker ClientsStatus
-				//if c.StartupCoreServices.BrokerClients {
-				// Register the broker client service
-				//brokerClientService.RegisterBrokerService()
-				//}
+			// if c.EnableStartupServices {
+			// Run Broker ClientsStatus
+			//if c.StartupCoreServices.BrokerClients {
+			// Register the broker client service
+			//brokerClientService.RegisterBrokerService()
+			//}
 
-				// Run the registered services
-				register_service.RunRegisteredServices()
-			}
+			// Run the registered services
+			// register_service.RunRegisteredServices()
+			// }
 			// -------Run Services--------\\
 
 			// Start Execution!

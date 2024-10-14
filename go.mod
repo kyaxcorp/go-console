@@ -6,7 +6,8 @@ toolchain go1.22.3
 
 require (
 	github.com/gookit/color v1.5.4
-	github.com/kyaxcorp/go-core v0.0.1-20240805-0001
+	github.com/kyaxcorp/go-helper v1.0.1
+	github.com/kyaxcorp/go-logger v1.0.1
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/viper v1.10.1
@@ -14,8 +15,6 @@ require (
 
 require (
 	github.com/99designs/gqlgen v0.17.9 // indirect
-	github.com/BurntSushi/toml v1.4.0 // indirect
-	github.com/caarlos0/env/v6 v6.10.0 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/getsentry/sentry-go v0.29.0 // indirect
 	github.com/go-sql-driver/mysql v1.7.0 // indirect
@@ -28,6 +27,7 @@ require (
 	github.com/jackc/pgx/v5 v5.3.0 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
+	github.com/kyaxcorp/go-core v0.0.1-20240805-0001 // indirect
 	github.com/kyaxcorp/gofile v0.0.1-20220602-0002 // indirect
 	github.com/kyaxcorp/gofm v0.0.1-20220602-0003 // indirect
 	github.com/magiconair/properties v1.8.5 // indirect
@@ -52,7 +52,6 @@ require (
 	golang.org/x/sys v0.22.0 // indirect
 	golang.org/x/text v0.15.0 // indirect
 	gopkg.in/ini.v1 v1.67.0 // indirect
-	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gorm.io/driver/mysql v1.5.0 // indirect

@@ -1,10 +1,11 @@
 package menu
 
 import (
-	"github.com/kyaxcorp/go-core/core/helpers/_context"
 	"os"
 	"os/exec"
 	"path/filepath"
+
+	"github.com/kyaxcorp/go-helper/_context"
 )
 
 type InternalCommandOptions struct {

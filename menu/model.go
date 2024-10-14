@@ -2,7 +2,8 @@ package menu
 
 import (
 	"context"
-	"github.com/kyaxcorp/go-core/core/helpers/_context"
+
+	"github.com/kyaxcorp/go-helper/_context"
 	"github.com/spf13/cobra"
 )
 

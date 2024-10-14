@@ -2,14 +2,15 @@ package command
 
 import (
 	"context"
-	"github.com/kyaxcorp/go-core/core/helpers/_context"
-	"github.com/kyaxcorp/go-core/core/helpers/errors2/define"
-	"github.com/kyaxcorp/go-core/core/helpers/filesystem/lock"
-	"github.com/kyaxcorp/go-core/core/helpers/function"
-	"github.com/kyaxcorp/go-core/core/helpers/process"
-	"github.com/spf13/cobra"
 	"os"
 	"strconv"
+
+	"github.com/kyaxcorp/go-helper/_context"
+	"github.com/kyaxcorp/go-helper/errors2/define"
+	"github.com/kyaxcorp/go-helper/filesystem/lock"
+	"github.com/kyaxcorp/go-helper/function"
+	"github.com/kyaxcorp/go-helper/process"
+	"github.com/spf13/cobra"
 )
 
 type CmdOnDaemon func(*AddCmd)
