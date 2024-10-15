@@ -6,7 +6,7 @@ toolchain go1.22.3
 
 require (
 	github.com/gookit/color v1.5.4
-	github.com/kyaxcorp/go-helper v1.0.3
+	github.com/kyaxcorp/go-helper v1.0.4
 	github.com/kyaxcorp/go-logger v1.0.3
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/spf13/cobra v1.7.0
