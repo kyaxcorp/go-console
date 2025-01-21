@@ -12,11 +12,11 @@ func New(ctx context.Context) *Menu {
 	// the app owns
 	// execChecksum := name.GetCurrentProcessCleanMD5ExecName()
 
-	// rootCmd := &cobra.Command{
-	// 	Use:   "ARGUMENT",
-	// 	Short: "Main CLI -> " + execChecksum,
-	// 	Long:  `Main CLI -> ` + execChecksum,
-	// }
+	rootCmd := &cobra.Command{
+		Use: "ARGUMENT",
+		// Short: "Main CLI -> " + execChecksum,
+		// Long:  `Main CLI -> ` + execChecksum,
+	}
 
 	return &Menu{
 		cfgFile:     "",
@@ -26,6 +26,6 @@ func New(ctx context.Context) *Menu {
 		parentCtx: ctx,                      // This is the Root Context
 		ctx:       _context.WithCancel(ctx), // Create the cancel Context for this menu
 
-		// RootCmd: rootCmd,
+		RootCmd: rootCmd,
 	}
 }
